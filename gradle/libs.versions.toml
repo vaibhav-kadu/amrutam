@@ -1,0 +1,51 @@
+[versions]
+agp = "8.4.2"
+cronetEmbedded = "119.6045.31"
+firebaseAnalytics = "22.0.2"
+firebaseCore = "21.1.1"
+firebaseCrashlyticsGradle = "3.0.2"
+gradle = "8.4.2"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.0"
+constraintlayout = "2.1.4"
+multidex = "1.0.3"
+playServicesBasement = "18.4.0"
+swiperefreshlayout = "1.1.0"
+googleGmsGoogleServices = "4.4.2"
+firebaseDatabase = "21.0.0"
+googleServices = "4.4.2"
+firebaseMessaging = "24.0.0"
+firebaseCrashlytics = "19.0.2"
+
+
+
+[libraries]
+cronet-embedded = { module = "org.chromium.net:cronet-embedded", version.ref = "cronetEmbedded" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics", version.ref = "firebaseAnalytics" }
+firebase-core = { module = "com.google.firebase:firebase-core", version.ref = "firebaseCore" }
+firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics", version.ref = "firebaseCrashlytics" }
+firebase-crashlytics-gradle = { module = "com.google.firebase:firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsGradle" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+multidex = { module = "com.android.support:multidex", version.ref = "multidex" }
+play-services-basement = { module = "com.google.android.gms:play-services-basement", version.ref = "playServicesBasement" }
+swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefreshlayout" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+google-services = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging", version.ref = "firebaseMessaging" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+
